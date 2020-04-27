@@ -2,6 +2,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [LivePreview](#livePreview)
 
 
 ## General info
@@ -15,6 +16,9 @@ Project is created with:
 * Pure JS
 * WebPack 
 * Yarn
+
+## LivePreview
+* https://daviddziewulski.github.io/Challange3/
 
 ![View Page](./viewPage/project.jpg) 
     
