@@ -1,0 +1,64 @@
+.info 
+    text-align: center
+    padding: 50px 0
+    background-color: black
+    +e('wrapper')   
+        width: 90%
+        +for-tablets-ipads-landscape
+            +flexbox
+            +justify-content(center)
+    +e('box')
+        +for-tablets-ipads-landscape
+            width: 30%
+    +e('title') 
+        margin: 24px 0
+        font-size: 20px
+        color: white
+    +e('list')
+        width: 80%
+        margin: auto
+    +e('item')
+        margin: 8px auto
+        text-align: left
+        cursor: pointer
+        background-position: 4px center
+        background-repeat: no-repeat
+        background-repeat: no-repeat
+        +m('gps')
+            background-image: url(../img/location-icon.png)
+            background-position-y: 8px
+        +m('phone')
+            background-image: url(../img/iphone-icon.png)
+        +m('email')
+            background-image: url(../img/email-icon.png)
+        +m('art')
+            background-image: url(../img/news-icon.png)
+        +m('news')
+            background-image: url(../img/photo-icon.png)
+        +m('play')
+            background-image: url(../img/play-icon.png)
+    +e('link')  
+        display: inline-block
+        padding: 8px 0 8px 40px
+        color: $brightGray-color
+        text-decoration: none
+        transition: all 0.5s ease 0s
+        &:hover
+            color: $limeGreen-color
+    +e('keywords')
+        padding-left: 40px
+        color: white
+        font-weight: 700
+    +e('post-time')
+        padding-left: 40px
+        color: white
+        font-size: 13px
+    +e('box-items')
+        width: 80%
+        margin: 8px auto
+        text-align: left
+        background-position: 4px 10px
+        background-repeat: no-repeat
+        background-repeat: no-repeat
+        background-image: url(../img/twitter-icon.png)
+        

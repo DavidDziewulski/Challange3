@@ -1,0 +1,25 @@
+// element
+=e($element)
+  &__#{$element}
+    @content
+// modifier
+=m($modifier)
+  &--#{$modifier}
+    @content
+
+// fonts
+=font($name,$size,$weight,$color)
+  font-family: $name
+  font-size: $size
+  font-weight: $weight
+  color: $color
+  
+
+// Hamburger- line
+
+=hamburger-line
+  width: 100%
+  height: 3px
+  background-color: $gray-color
+  position: absolute
+

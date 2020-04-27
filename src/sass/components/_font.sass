@@ -1,0 +1,32 @@
+.title
+    +font($fontMontserrat,40px,700,#ffffff)
+    text-transform: uppercase
+    +for-tablets-ipads-landscape
+        font-size: 60px
+    +m('lg')
+        font-size: 32px
+        color: $darkGray-color
+        +for-tablets-ipads-landscape
+            font-size: 40px
+    +m('m')
+        font-size: 16px
+        color: $darkGray-color
+        +for-tablets-ipads-landscape
+            font-size: 18px
+    +m('link')
+        font-size: 16px
+        color: $limeGreen-color
+        text-decoration: none
+.subtitle
+    +font($fontRoboto,16px,400,$lightGray-color)
+    +for-tablets-ipads-landscape
+        font-size: 20px
+    +m('lg')
+        color: $davyGray-color
+    +m('m')
+        font-size: 16px
+.description
+    +font($fontRoboto,14px,400,$davyGray-color)
+    +m('lg')
+        font-size: 16px
+   

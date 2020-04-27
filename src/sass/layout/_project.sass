@@ -1,0 +1,55 @@
+.project
+    background-image: url(../img/tablet.png)
+    background-size: 300px
+    background-repeat: no-repeat
+    background-position: bottom right
+    text-align: center
+    margin: 60px auto
+    padding-bottom: 270px
+    +for-tablets-ipads-landscape 
+        padding-bottom: 0
+        background-position: center right
+        background-size: 50%
+    +e('subtitle')
+        margin: 24px 0 50px 0
+    +e('title-lg')
+        margin: 16px 0
+    +e('title-sm')
+        padding: 86px 0 0
+        text-transform: none
+        +for-tablets-ipads-landscape 
+            padding: 86px 0 0 86px
+    +e('description')
+        margin-bottom: 50px
+        +for-tablets-ipads-landscape
+            width: 30%
+    +e('description-sm')
+        margin: 16px 0 32px 0
+        +for-tablets-ipads-landscape 
+            padding: 0 0 0 86px
+        +m('margin')
+            margin: 32px 0
+            +for-tablets-ipads-landscape 
+                padding: 0
+    +e('box')
+        width: 90%
+        margin: auto
+        +for-tablets-ipads-landscape
+            +flexbox
+            +flex-direction(column)
+            text-align: left
+    +e('item')
+        background-position: top center
+        background-repeat: no-repeat
+        +for-tablets-ipads-landscape   
+            background-position: left 75px
+        +m('first')
+            background-image: url(../img/basket.png)
+        +m('second')
+            background-image: url(../img/laptop.png)
+        +m('third')
+            background-image: url(../img/block.png)           
+    +e('icon')
+        padding-left: 10px
+        
+        

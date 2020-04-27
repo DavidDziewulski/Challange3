@@ -1,0 +1,45 @@
+.clients
+    text-align: center
+    margin: 60px auto
+    +e('wrapper')
+        width: 90%
+    +e('title')
+        margin: 0 0 24px 0
+    +e('img')
+        width: 180px
+        margin: 24px 0  
+    +e('box')
+        margin: 24px 0 
+        +for-tablets-ipads-landscape 
+            +flexbox
+            +justify-content(center)
+            +align-items(center)
+            margin: 64px 0 
+        +m('reverse')
+            +for-tablets-ipads-landscape 
+            +flex-direction(row-reverse)
+    +e('person')
+        position: relative
+        background-color: #f9f9f9
+        margin: 0 16px
+        &::before
+            content: ''
+            position: absolute
+            top: -7px
+            left: 49%
+            transform: rotate(-45deg)
+            border: solid 10px #f9f9f9
+            +for-tablets-ipads-landscape 
+                top: 45%
+                left: -10px
+        +m('arrow')
+            +for-tablets-ipads-landscape 
+               &::before
+                    top: 45%
+                    left: calc(100% - 10px)
+    +e('description')
+        padding: 24px 8px
+    +e('client-name')
+        display: block
+        padding: 16px 0
+        color: $limeGreen-color

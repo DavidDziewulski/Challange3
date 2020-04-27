@@ -1,0 +1,20 @@
+.service
+    width: 100%
+    background-color: #ffffff
+    text-align: center
+    margin: 60px 0
+    +e('title')
+        margin-bottom: 16px
+    +e('title-sm')
+        margin: 8px
+    +e('box')
+        margin: 40px 0
+        +for-tablets-ipads-landscape
+            +flexbox
+    +e('column')
+        margin: 24px  auto
+        max-width: 280px
+        +for-tablets-ipads-landscape
+            padding: 0 12px
+    +e('img')
+        margin: 10px 0

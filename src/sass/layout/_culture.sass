@@ -1,0 +1,59 @@
+.culture
+    padding: 60px 0
+    background-color: #f9f9f9
+    text-align: center
+    +e('wrapper')
+        width: 90%
+    +e('subtitle')
+        padding: 16px 0
+    +e('description')
+        padding: 16px 0
+    +e('box')
+        margin: 48px 0 auto
+        +for-tablets-ipads-landscape 
+            +flexbox
+            +flex-direction(row)      
+    +e('item')
+        padding: 85px 8px 0 8px
+        max-width: 300px
+        margin: auto
+        position: relative
+        +for-tablets-ipads-landscape 
+            max-width: none
+        +m('first')
+            background-image: url(../img/work.png)
+            background-size: 75px
+            background-repeat: no-repeat
+            background-position: top
+            text-align: center
+
+            +for-tablets-ipads-landscape 
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 40px
+                    left: 70%
+                    right: -30%
+                    height: 2px
+                    background-color: $davyGray-color
+        +m('second')
+            background-image: url(../img/quality.png)
+            background-size: 75px
+            background-repeat: no-repeat
+            background-position: top
+            text-align: center            
+        +m('third')
+            background-image: url(../img/deliver.png)
+            background-size: 75px
+            background-repeat: no-repeat
+            background-position: top
+            text-align: center    
+            +for-tablets-ipads-landscape 
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 40px
+                    left: -30%
+                    right: 70%
+                    height: 2px
+                    background-color: $davyGray-color

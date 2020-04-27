@@ -1,0 +1,44 @@
+.footer 
+    margin: 32px auto
+    text-align: center
+    +e('wrapper')   
+        width: 90%
+        +for-tablets-ipads-landscape
+            +flexbox
+            +justify-content(center)
+            +align-items(center)
+    +e('author')
+        color: $darkGray-color
+        font-size: 14px
+        font-weight: 400
+        text-transform: capitalize
+    +e('link')
+        text-decoration: none
+        color: $darkGray-color
+    +e('socials')
+        margin: 24px 0 0
+        +for-tablets-ipads-landscape
+            margin: 0 54px
+    +e('social-link')
+        display: inline-block
+        margin: 0 4px
+        width: 40px
+        height: 40px
+        border-radius: 20px
+        background-color: $darkGray-color
+        transition: all 1s ease 0s
+        +m('tweeter')
+            &:hover
+                background-color: $lightBlue-color
+        +m('facebook')
+            &:hover
+                background-color: $blue-color
+        +m('pinteres')
+            &:hover
+                background-color: $red-color
+        +m('google')
+            &:hover
+                background-color: $orange-color
+    +e('social-img')
+        vertical-align: -14px
+        

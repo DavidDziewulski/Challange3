@@ -1,0 +1,40 @@
+.relax
+    text-align: center
+    margin: 60px auto
+    +e('wrapper')
+        max-width: none
+        +for-tablets-ipads-landscape
+            +flexbox
+    +e('title')
+        color: #ffffff
+    +e('col-right')
+        background-image: url(../img/relax.png)
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        background-attachment: fixed
+        width: 100%
+        padding: 12px
+        +for-tablets-ipads-landscape
+            text-align: left
+            padding: 24px 60px
+    +e('col-left')
+        +for-tablets-ipads-landscape
+            width: 40%
+            background-image: url(../img/setting.png)
+            background-size: cover
+            background-position: 100%
+    +e('span')
+        color: $limeGreen-color
+    +e('subtitle')
+        margin: 24px 0
+    +e('item')  
+        margin: 16px 0
+        &::before
+            content: url(../img/done.png)
+            vertical-align: -10px
+            padding-right: 16px
+    +e('button')
+        margin: 16px 0
+    +e('list')
+        

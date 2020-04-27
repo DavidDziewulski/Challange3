@@ -1,0 +1,16 @@
+.logos
+    width: 90%
+    margin: 60px auto
+    text-align: center
+    +e('wrapper')
+        +flexbox
+        +flex-direction(column)
+        +justify-content(center)
+        +align-items(center)
+        width: 100%
+        +for-tablets-ipads-landscape
+            +flex-direction(row)
+    +e('logo')
+        padding: 20px 0
+        +for-tablets-ipads-landscape
+            padding: 0 24px

@@ -1,0 +1,57 @@
+.nav
+    width: 100%
+    background-color: #fff
+    position: fixed
+    z-index: 1
+    padding: 0 8px
+    +e('wrapper')
+        +flexbox
+        +justify-content(space-between)
+        +align-items(center)
+    +e('box')
+        position: absolute
+        top: -8px 
+        right: 0
+        display: inline-block
+        width: 150px
+        height: 100vh 
+        transform: translateX(+150px) translateY(50px) 
+        transition: .4s .1s ease-in-out
+        text-align: center
+        background-color: #fff
+        visibility: hidden
+        +for-tablets-ipads-landscape
+            position: static
+            height: 50px
+            width: auto
+            transform: translateX(0px) translateY(0px) 
+            visibility: visible
+    +e('logo')
+        padding: 0 8px
+    +m('active')
+        transform: translateX(0px) translateY(50px) 
+        visibility: visible
+        +for-tablets-ipads-landscape
+            transform: translateX(0px) translateY(0px) 
+    +e('item') 
+        margin: 20px 0 20px 32px
+        +for-tablets-ipads-landscape    
+            margin: 0 8px
+    +e('list')
+        text-align: left
+        +for-tablets-ipads-landscape
+            +flexbox
+            +flex-direction(row)
+            +align-items(center)
+            height: 100%
+    +e('link')
+        display: inline-block
+        padding: 12px
+        +font($fontMontserrat,15px,400,$davyGray-color)
+        text-decoration: none
+        cursor: pointer
+        +for-tablets-ipads-landscape
+            padding: 4px 8px
+        &:hover
+            color: $darkGray-color
+            transition: all 1s ease 0s
